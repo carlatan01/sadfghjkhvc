@@ -1,0 +1,157 @@
+/* =========================
+   COLORS - PASTEL THEME
+   ========================= */
+:root {
+    --pink: #ffdde6;
+    --pink-dark: #f7c4d6;
+    --lavender: #dcd0ff;
+    --mint: #d5f7e6;
+    --cream: #fff7e6;
+    --dark: #1c1c1c;
+    --white: #ffffff;
+
+    --radius: 18px;
+    --shadow: 0 12px 30px rgba(0,0,0,0.15);
+    --transition: 0.3s ease;
+}
+
+body {
+    background: var(--pink);
+    font-family: "Poppins", "Quicksand", sans-serif;
+    color: var(--dark);
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+.nav-glass {
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(14px);
+    padding: 1rem 0;
+}
+
+.brand-pastel {
+    font-family: "Sacramento", cursive;
+    font-size: 2.2rem;
+    color: #d86b9f;
+}
+
+/* =========================
+   HERO
+   ========================= */
+.hero-section {
+    height: 90vh;
+    position: relative;
+    background: url("pink-aesthetic-3840x2160-16544.jpg") center/cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(255,255,255,0.25);
+}
+
+.hero-content {
+    position: relative;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.profile-img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;   /* 🔥 FIX FOT0 GEPENG */
+    box-shadow: var(--shadow);
+}
+
+.hero-name {
+    font-size: 3rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-family: "Quicksand";
+}
+
+.btn-pastel {
+    background: var(--lavender);
+    padding: 0.7rem 1.6rem;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-pastel:hover {
+    background: var(--pink-dark);
+    transform: translateY(-3px);
+}
+
+/* =========================
+   SECTIONS
+   ========================= */
+.section {
+    padding: 70px 0;
+    background: var(--pink);
+}
+
+.section-light {
+    padding: 70px 0;
+    background: var(--cream);
+}
+
+.section-title {
+    font-weight: 700;
+    font-family: "Quicksand";
+}
+
+/* =========================
+   ABOUT
+   ========================= */
+.about-box {
+    background: var(--mint);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+/* =========================
+   PROJECTS
+   ========================= */
+.project-card {
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: white;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;    /* 🔥 AGAR GAK GEPENG */
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(200,150,220,0.3);
+}
+
+.project-title {
+    color: #b675c9;
+    font-weight: 600;
+}
+
+.project-desc {
+    color: #555;
+}
+
+/* =========================
+   CONTACT
+   ========================= */
+.contact-form {
+    background: var(--mint);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
